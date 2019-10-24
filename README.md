@@ -7,11 +7,14 @@ Documentation
 
 The project is complete and deployed on Google Cloud, the project is built using Angular and Firebase.
 
-The published link: 
+##The published link: 
 https://socialmediawebapp-dcb8a.firebaseapp.com
 
-GitHub Link: 
+##GitHub Link: 
 https://github.com/Tommy0814/Social-Media-Web-App.git
+
+##Video Link: 
+https://youtu.be/OmGED8b9vj0
 
 The features include:
 User Registration 
