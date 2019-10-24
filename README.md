@@ -16,6 +16,9 @@ https://github.com/Tommy0814/Social-Media-Web-App.git
 ### Video Link: 
 https://youtu.be/OmGED8b9vj0
 
+### Documentation:
+https://docs.google.com/document/d/1RajDTeGiVX8-dVC2jwmRirSONg_DdgIQwKeix0RHMLM/edit?usp=sharing
+
 The features include:
 User Registration 
 Email Verification
