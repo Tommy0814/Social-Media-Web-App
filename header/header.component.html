@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+    <!-- Links -->
+    <ul class="nav navbar-nav">
+        
+      <!-- <a class="navbar-brand" href="#">Social Media</a> -->
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive = "active"  [routerLinkActiveOptions]="{exact: true}">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/allposts" routerLinkActive = "active" *ngIf="isLoggedIn">All Posts</a>
+        </li>  
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/following" routerLinkActive = "active" *ngIf="isLoggedIn">Following</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/favorites" routerLinkActive = "active" *ngIf="isLoggedIn">Favorites</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/MyPosts" routerLinkActive = "active" *ngIf="isLoggedIn">My Posts</a>
+      </li>
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right ml-auto">
+
+        <li class="dropdown" *ngIf="isLoggedIn" style="margin-top: 8px; margin-right:120px;">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript: void(0)"><span class="user-name-display">{{name}}</span>
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:void(0)"><span class="user-title">Email: </span><span class="user-data">{{email}}</span></a></li>
+              <li><a href="javascript:void(0)"><span class="user-title">Uid: </span><span class="user-data">{{uid}}</span></a></li>
+            </ul>
+          </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/signup" routerLinkActive = "active" *ngIf="!isLoggedIn">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login" routerLinkActive = "active" *ngIf="!isLoggedIn">Sign In</a>
+            </li>
+            <li class="nav-item" *ngIf="isLoggedIn" (click)="onLogOut()">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+    
+    </ul>
+
+  
+  </nav>
